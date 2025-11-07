@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
 
@@ -269,7 +269,7 @@
         <ul class="usa-accordion usa-accordion--bordered quick-access-list">
           <li>
             <button class="usa-accordion__button" aria-expanded="false" aria-controls="child-support-services">
-              To Access Child Support Services
+              Child Support Services
             </button>
             <div id="child-support-services" class="usa-accordion__content usa-prose">
               <h3>Child Support Services</h3>
@@ -340,7 +340,7 @@
           </li>
           <li>
             <button class="usa-accordion__button" aria-expanded="false" aria-controls="public-assistance-services">
-              To Access Public Assistance services
+              Public Assistance Services
             </button>
             <div id="public-assistance-services" class="usa-accordion__content usa-prose">
               <h3>Public Assistance Services</h3>
@@ -402,7 +402,7 @@
           </li>
           <li>
             <button class="usa-accordion__button" aria-expanded="false" aria-controls="children-services">
-              To Access Child & Adult Protective Services
+              Child & Adult Protective Services
             </button>
             <div id="children-services" class="usa-accordion__content usa-prose">
               <h3>Child & Adult Protective Services</h3>
@@ -461,99 +461,107 @@
 
         <div class="support-grid">
           <!-- Medicaid Card -->
-          <article class="support-card">
-            <div class="support-card__icon">
-              <i class="fas fa-hospital" aria-hidden="true"></i>
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/medicaid.jpg');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Medicaid</h3>
+              <p class="support-card__description">
+                Federally funded health care program that provides assistance to certain low-income and medically vulnerable people.
+              </p>
+              <a href="/medicaid" class="support-card__cta" aria-label="Learn more about Medicaid">Learn more</a>
             </div>
-            <h3 class="support-card__title">Medicaid</h3>
-            <p class="support-card__description">
-              Federally funded health care program that provides assistance to certain low-income and medically vulnerable people.
-            </p>
-            <a href="/medicaid" class="support-card__cta" aria-label="Learn more about Medicaid">Learn more</a>
           </article>
 
           <!-- Food & Cash Assistance Card -->
-          <article class="support-card">
-            <div class="support-card__icon">
-              <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/food-assistance.jpg');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Food & Cash Assistance</h3>
+              <p class="support-card__description">
+                Public Assistance benefits are available to Ohioans, including food, cash, medicaid and child care.
+              </p>
+              <a href="/public-assistance" class="support-card__cta" aria-label="Learn more about Food and Cash Assistance">Learn more</a>
             </div>
-            <h3 class="support-card__title">Food & Cash Assistance</h3>
-            <p class="support-card__description">
-              Public Assistance benefits are available to Ohioans, including food, cash, medicaid and child care.
-            </p>
-            <a href="/public-assistance" class="support-card__cta" aria-label="Learn more about Food and Cash Assistance">Learn more</a>
           </article>
 
           <!-- Child Care Card -->
-          <article class="support-card">
-            <div class="support-card__icon">
-              <i class="fas fa-baby-carriage" aria-hidden="true"></i>
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/child-care.jpg');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Child Care</h3>
+              <p class="support-card__description">
+                Learn about the child care process, get help paying for Child Care or become a Child Care provider.
+              </p>
+              <a href="/child-care" class="support-card__cta" aria-label="Learn more about Child Care">Learn more</a>
             </div>
-            <h3 class="support-card__title">Child Care</h3>
-            <p class="support-card__description">
-              Learn about the child care process, get help paying for Child Care or become a Child Care provider.
-            </p>
-            <a href="/child-care" class="support-card__cta" aria-label="Learn more about Child Care">Learn more</a>
           </article>
 
           <!-- Child Support Enforcement Card -->
-          <article class="support-card">
-            <div class="support-card__icon">
-              <i class="fas fa-gavel" aria-hidden="true"></i>
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/child-support.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Child Support Enforcement</h3>
+              <p class="support-card__description">
+                All child support for Ohio's children goes through a CSEA. Belmont County CSEA can accept cash, check, money orders, and credit card payments.
+              </p>
+              <a href="/child-support" class="support-card__cta" aria-label="Learn more about Child Support Enforcement">Learn more</a>
             </div>
-            <h3 class="support-card__title">Child Support Enforcement</h3>
-            <p class="support-card__description">
-              All child support for Ohio's children goes through a CSEA. Belmont County CSEA can accept cash, check, money orders, and credit card payments.
-            </p>
-            <a href="/child-support" class="support-card__cta" aria-label="Learn more about Child Support Enforcement">Learn more</a>
           </article>
 
           <!-- Child Protective Services Card -->
-          <article class="support-card">
-            <div class="support-card__icon">
-              <i class="fas fa-shield-alt" aria-hidden="true"></i>
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/child-protective.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Child Protective Services</h3>
+              <p class="support-card__description">
+                Protecting our children is important. If you suspect that a child living in Belmont County is being abused or neglected, call immediately.
+              </p>
+              <a href="/child-protective-services" class="support-card__cta" aria-label="Learn more about Child Protective Services">Learn more</a>
             </div>
-            <h3 class="support-card__title">Child Protective Services</h3>
-            <p class="support-card__description">
-              Protecting our children is important. If you suspect that a child living in Belmont County is being abused or neglected, call immediately.
-            </p>
-            <a href="/child-protective-services" class="support-card__cta" aria-label="Learn more about Child Protective Services">Learn more</a>
           </article>
 
           <!-- Adoption & Foster Care Card -->
-          <article class="support-card">
-            <div class="support-card__icon">
-              <i class="fas fa-users" aria-hidden="true"></i>
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/adoption.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Adoption & Foster Care</h3>
+              <p class="support-card__description">
+                Are you interested in becoming a foster or adoptive parent? Children Services is here to help you.
+              </p>
+              <a href="/adoption-foster" class="support-card__cta" aria-label="Learn more about Adoption and Foster Care">Learn more</a>
             </div>
-            <h3 class="support-card__title">Adoption & Foster Care</h3>
-            <p class="support-card__description">
-              Are you interested in becoming a foster or adoptive parent? Children Services is here to help you.
-            </p>
-            <a href="/adoption-foster" class="support-card__cta" aria-label="Learn more about Adoption and Foster Care">Learn more</a>
           </article>
 
           <!-- Workforce Development Card -->
-          <article class="support-card">
-            <div class="support-card__icon">
-              <i class="fas fa-briefcase" aria-hidden="true"></i>
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/workforce.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Workforce Development</h3>
+              <p class="support-card__description">
+                OhioMeansJobs - Belmont County is a resource for veterans, job seekers and employers. Get resume help, training and financial support.
+              </p>
+              <a href="/workforce" class="support-card__cta" aria-label="Learn more about Workforce Development">Learn more</a>
             </div>
-            <h3 class="support-card__title">Workforce Development</h3>
-            <p class="support-card__description">
-              OhioMeansJobs - Belmont County is a resource for veterans, job seekers and employers. Get resume help, training and financial support.
-            </p>
-            <a href="/workforce" class="support-card__cta" aria-label="Learn more about Workforce Development">Learn more</a>
           </article>
 
           <!-- Job Postings Card -->
-          <article class="support-card">
-            <div class="support-card__icon">
-              <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/job.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Job Postings</h3>
+              <p class="support-card__description">
+                Current job openings at Belmont County DJFS. Information on how to apply and Belmont County's Drug Free Workplace Policy.
+              </p>
+              <a href="/jobs" class="support-card__cta" aria-label="View job openings at Belmont County DJFS">View Openings</a>
             </div>
-            <h3 class="support-card__title">Job Postings</h3>
-            <p class="support-card__description">
-              Current job openings at Belmont County DJFS. Information on how to apply and Belmont County's Drug Free Workplace Policy.
-            </p>
-            <a href="/jobs" class="support-card__cta" aria-label="View job openings at Belmont County DJFS">View Openings</a>
           </article>
         </div>
       </div>
