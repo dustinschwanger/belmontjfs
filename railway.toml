@@ -1,5 +1,0 @@
-[build]
-builder = "nixpacks"
-
-[deploy]
-startCommand = "caddy file-server --root belmontjfs --listen :${PORT:-3000}"

@@ -4,12 +4,11 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files from the belmontjfs directory
-app.use(express.static(path.join(__dirname, 'belmontjfs')));
+// Serve static files from the current directory (root)
+app.use(express.static(__dirname));
 
 // Security headers for better security and accessibility
 app.use((req, res, next) => {
-  // Content Security Policy
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('X-Frame-Options', 'SAMEORIGIN');
   res.setHeader('X-XSS-Protection', '1; mode=block');
@@ -19,7 +18,7 @@ app.use((req, res, next) => {
 
 // Handle all routes by serving index.html (for SPA-like behavior)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'belmontjfs', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Start the server
