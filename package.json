@@ -1,0 +1,19 @@
+{
+  "name": "belmont-county-jfs-website",
+  "version": "1.0.0",
+  "description": "Belmont County Department of Job & Family Services Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["static-site", "government", "job-family-services"],
+  "author": "Belmont County DJFS",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
